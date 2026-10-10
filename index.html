@@ -6,6 +6,7 @@
         <title>4.b kviz</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
 </head>
 <body>
         <div class = "centre">
@@ -30,25 +31,21 @@
         ></path>
         </svg>
         </button>
-        <input
-        type="text"
-        name="teamName"
-        class="input__search"
-        placeholder="Unesi ime ekipe"
-        />
+        <input type="text" id="teamName" class="input__search" placeholder="Unesi ime ekipe"/>
         </div>
 
         <br><br><br>
 
         <!-- From Uiverse.io by cohencoo --> 
-        <input type="text" placeholder="Prvi član ekipe" name="text" class="input">
+        <input type="text" placeholder="Prvi član ekipe" id = "firstTeammate" class="input">
         <br><br>
-        <input type="text" placeholder="Drugi član ekipe" name="text" class="input">
+        <input type="text" placeholder="Drugi član ekipe" id = "secondTeammate" class="input">
         <br><br>
-        <input type="text" placeholder="Treći član ekipe" name="text" class="input">
+        <input type="text" placeholder="Treći član ekipe (opcionalno" id = "thirdTeammate" class="input">
         <br><br><br>
+	
 
-        <button>Prijavi se!</button>
+        <button onclick="readValues()">Prijavi se!</button>
         </div>
         
 </body>
